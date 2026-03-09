@@ -1,0 +1,1010 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="Crown and Quest team">
+      
+      
+      
+        <link rel="prev" href="../backend/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.24">
+    
+    
+      
+        <title>Recherches hand tracking+deplacement - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.28978c9b.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-hand-tracking" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Recherches hand tracking+deplacement
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../markdown/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown in 5min
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    01 research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IoT_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface &amp; API Unity vers Haptic / IOT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IoT_hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IoT Hardware – Crown &amp; Quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crown &amp; Quest — Backend Architecture Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recherches hand tracking+deplacement
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recherches hand tracking+deplacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hand-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hand Tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Hand Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-librairies-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Librairies disponibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-principe-dintegration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Principe d’intégration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-ressource-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Ressource vidéo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-deplacements-du-joueur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Déplacements du joueur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Déplacements du joueur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-mouvement-par-interaction-gestuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Mouvement par interaction gestuelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-interactions-avec-les-pnj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Interactions avec les PNJ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Interactions avec les PNJ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-exemple-waltz-of-the-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Exemple : Waltz of the Wizard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-autres-references-en-hand-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Autres références en hand tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Autres références en hand tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-maestro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Maestro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-hand-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hand Tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Hand Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-librairies-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Librairies disponibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-principe-dintegration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Principe d’intégration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-ressource-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Ressource vidéo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-deplacements-du-joueur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Déplacements du joueur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Déplacements du joueur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-mouvement-par-interaction-gestuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Mouvement par interaction gestuelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-interactions-avec-les-pnj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Interactions avec les PNJ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Interactions avec les PNJ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-exemple-waltz-of-the-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Exemple : Waltz of the Wizard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-autres-references-en-hand-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Autres références en hand tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Autres références en hand tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-maestro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Maestro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Get started
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../IoT_api/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    01 research
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <h1>Recherches hand tracking+deplacement</h1>
+
+<h2 id="1-hand-tracking">1. Hand Tracking<a class="headerlink" href="#1-hand-tracking" title="Permanent link">&para;</a></h2>
+<h3 id="11-librairies-disponibles">1.1 Librairies disponibles<a class="headerlink" href="#11-librairies-disponibles" title="Permanent link">&para;</a></h3>
+<p>Actuellement (depuis moins de 2 ans) on peut utiliser du hand tracking très facilement grâce à un nouveau package unity. Cela permet d’intégrer rapidement des interactions naturelles basées sur les mains, sans passer par des contrôleurs physiques.</p>
+<h3 id="12-principe-dintegration">1.2 Principe d’intégration<a class="headerlink" href="#12-principe-dintegration" title="Permanent link">&para;</a></h3>
+<p>Une fois le hand tracking ajouté au projet :
+- Il suffit de définir des objets comme <strong>"interactable"</strong>
+- À ces objets, on peut associer différents types d’actions :
+  - <strong>Click</strong>
+  - <strong>Grab</strong> (saisir)
+  - <strong>Teleport</strong></p>
+<p>Dans le cadre du projet envisagé, <strong>le téléport ne sera probablement pas utilisé</strong>, afin de favoriser des déplacements plus immersifs et cohérents avec le gameplay.</p>
+<h3 id="13-ressource-video">1.3 Ressource vidéo<a class="headerlink" href="#13-ressource-video" title="Permanent link">&para;</a></h3>
+<p>Vidéo de référence expliquant l’intégration et l’utilisation du hand tracking :<br />
+👉 <a href="https://www.youtube.com/watch?v=t2leX7LA9JU">https://www.youtube.com/watch?v=t2leX7LA9JU</a></p>
+<hr />
+<h2 id="2-deplacements-du-joueur">2. Déplacements du joueur<a class="headerlink" href="#2-deplacements-du-joueur" title="Permanent link">&para;</a></h2>
+<h3 id="21-mouvement-par-interaction-gestuelle">2.1 Mouvement par interaction gestuelle<a class="headerlink" href="#21-mouvement-par-interaction-gestuelle" title="Permanent link">&para;</a></h3>
+<p>Un exemple intéressant proposé par <strong>Drakheir</strong> montre une alternative au déplacement classique :
+- Le joueur <strong>"attrape" l’air devant lui</strong> (grab dans le vide)
+- Ce geste permet de <strong>se tirer vers l’avant</strong> et d’avancer</p>
+<p>Cette approche renforce l’immersion et limite le motion sickness en évitant les déplacements artificiels via joystick ou téléportation.</p>
+<p>On étudie également la possibilité de se déplacer en balançant les bras comme le système de course de blade and sorcery (blade and sorcery utilise le joystick pour le déplacement et le mouvement des bras uniquement pour course/marche).
+Mais attention aux risques : possibilité de déclencher un déplacement du joueur alors que celui veut uniquement lever la main ou au contraire si le joueur doit entamer 2 ou 3 mouvements de bras avant de se déplacer en jeu, cela peut vite nuire à son expérience.</p>
+<p>Autre Option, tracker le mouvement des jambes et se déplacer à l'aide de mouvements de genoux. Cela nécessiterai probablement des capteurs en plus</p>
+<hr />
+<h2 id="3-interactions-avec-les-pnj">3. Interactions avec les PNJ<a class="headerlink" href="#3-interactions-avec-les-pnj" title="Permanent link">&para;</a></h2>
+<h3 id="31-exemple-waltz-of-the-wizard">3.1 Exemple : <em>Waltz of the Wizard</em><a class="headerlink" href="#31-exemple-waltz-of-the-wizard" title="Permanent link">&para;</a></h3>
+<p>Un excellent exemple d’interaction avancée avec un PNJ est visible dans <em>Waltz of the Wizard</em> :
+- Un <strong>squelette</strong> qui parle au joueur
+- Il <strong>répond aux actions et aux paroles</strong> du joueur
+- Il <strong>sauvegarde l’état des interactions</strong>
+- Il <strong>adapte ses dialogues</strong> en fonction du contexte et de l’historique
+- Il <strong>sait quand le joueur s’adresse à lui</strong></p>
+<p>Point important :
+- <strong>Aucun LLM n’est utilisé</strong>
+- Le système repose uniquement sur un <strong>arbre logique de dialogues</strong></p>
+<p>Ce jeu est également un <strong>très bon exemple de hand tracking bien intégré</strong>, à la fois pour les interactions et la communication avec les PNJ.</p>
+<hr />
+<h2 id="4-autres-references-en-hand-tracking">4. Autres références en hand tracking<a class="headerlink" href="#4-autres-references-en-hand-tracking" title="Permanent link">&para;</a></h2>
+<h3 id="41-maestro">4.1 <em>Maestro</em><a class="headerlink" href="#41-maestro" title="Permanent link">&para;</a></h3>
+<p><em>Maestro</em> est un autre exemple marquant de l’utilisation du hand tracking :
+- Précision des gestes
+- Interaction fine avec l’environnement
+- Exploitation naturelle des mains comme interface principale</p>
+<hr />
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>Ces différentes références montrent que :
+- Le <strong>hand tracking</strong> est aujourd’hui suffisamment mature pour être au cœur du gameplay
+- Des <strong>déplacements alternatifs</strong> au téléport sont viables et immersifs
+- Des <strong>PNJ crédibles et adaptatifs</strong> peuvent être créés sans intelligence artificielle générative, uniquement via des arbres de décision bien conçus</p>
+<p>Ces éléments serviront de base pour la conception et les choix techniques du futur jeu VR.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../backend/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Crown &amp;amp; Quest — Backend Architecture Research">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Crown &amp; Quest — Backend Architecture Research
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.16f8adc2.min.js"></script>
+      
+    
+  </body>
+</html>

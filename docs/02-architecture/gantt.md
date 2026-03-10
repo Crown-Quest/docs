@@ -16,15 +16,15 @@ Recherche IA :p2c, 2026-02-15, 60d
 Architecture backend :p2d, 2026-02-15, 60d
 
 section Phase 3 - Premières Fonctionnalités
-Premiers assets Unity :p3a, 2026-5-15, 30d
+Premiers assets Unity :p3a, 2026-05-15, 90d
 Prototype VR Simple :p3b, 2026-06-15, 60d
 Prototype gilet haptique :p3c, 2026-06-15, 45d
 Communication Unity ESP32 :p3d, 2026-07-01, 30d
-Infrastructure backend :p3e, 2026-06-15, 60d
+Infrastructure backend :p3e, 2026-05-15, 90d
 
 section Phase 4 - Fonctionnalités avancées
-Patterns haptiques :p4a, 2026-08-15, 30d
-Interaction VR + gilet :p4b, 2026-09-01, 30d
+Patterns haptiques :p4a, 2026-08-01, 120d
+Interaction VR + gilet :p4b, 2026-09-01, 120d
 Sauvegarde personnage :p4c, 2026-09-15, 30d
 
 section Phase 5 - Gameplay Final

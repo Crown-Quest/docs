@@ -13,7 +13,7 @@ section Phase 2 - Recherche IoT & VR
 Recherche Unity / VR :p2a, 2026-01-15, 120d
 Recherche IoT gilet haptique :p2b, 2026-01-15, 120d
 Recherche IA :p2c, 2026-02-15, 90d
-Architecture backend :p2d, 2026-02-15, 90d
+Recherche architecture Backend :p2d, 2026-02-15, 90d
 
 section Phase 3 - Premières Fonctionnalités
 Premiers assets Unity :p3a, 2026-05-15, 90d
@@ -23,7 +23,7 @@ Communication Unity ESP32 :p3d, 2026-07-01, 30d
 Infrastructure backend :p3e, 2026-05-15, 90d
 
 section Phase 4 - Fonctionnalités avancées
-Patterns haptiques :p4a, 2026-08-01, 120d
+Patterns haptiques :p4a, 2026-08-15, 120d
 Interaction VR + gilet :p4b, 2026-09-01, 120d
 Sauvegarde personnage :p4c, 2026-09-15, 30d
 

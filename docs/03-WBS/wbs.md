@@ -98,10 +98,9 @@ D1 --> D11[Intégration du SDK VR]
 D1 --> D12[Gestion du casque VR]
 D1 --> D13[Gestion des contrôleurs VR]
 
-D2 --> D21[Prototype d’interaction VR]
-D2 --> D22[Système de manipulation d’objets]
-D2 --> D23[Système de détection des mains]
-D2 --> D24[Système d’interaction physique]
+D2 --> D21[Système de manipulation d’objets]
+D2 --> D22[Système de détection des mains]
+D2 --> D23[Système d’interaction physique]
 
 D3 --> D31[Système de locomotion]
 D3 --> D32[Calibration joueur]
@@ -117,19 +116,23 @@ C --> C4[Système d’interaction]
 C --> C5[Intelligence artificielle]
 C --> C6[Interface utilisateur]
 
+C1 --> C1[Prototype de déplacement utilisateur]
+C1 --> C12[Prototype d’interaction VR]
+C1 --> C13[Système de détection des collisions]
+
 C2 --> C21[Système de déplacement]
 C2 --> C22[Système de contrôle VR]
 C2 --> C23[Système de caméra VR]
-C2 --> C24[Prototype de déplacement utilisateur]
 
-C3 --> C31[Système de combat]
-C3 --> C32[Système de détection des collisions]
+C3 --> C31[Système de dialogue]
+C3 --> C32[Système de combat]
 
 C4 --> C41[Interaction avec objets]
 C4 --> C42[Système de ramassage d’objets]
 C4 --> C43[Utilisation d’objets]
-C4 --> C44[Système de dialogue]
-C4 --> C45[Système d’arbre de décision]
+
+C5 --> C54[Système de dialogue]
+C5 --> C55[Système d’arbre de décision]
 
 C6 --> C61[HUD]
 C6 --> C62[Menus du jeu]

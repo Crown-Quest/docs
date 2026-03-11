@@ -116,7 +116,7 @@ C --> C4[Système d’interaction]
 C --> C5[Intelligence artificielle]
 C --> C6[Interface utilisateur]
 
-C1 --> C1[Prototype de déplacement utilisateur]
+C1 --> C11[Prototype de déplacement utilisateur]
 C1 --> C12[Prototype d’interaction VR]
 C1 --> C13[Système de détection des collisions]
 

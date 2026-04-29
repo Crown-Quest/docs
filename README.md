@@ -15,3 +15,14 @@ Documentation repository for the T-ESP project CrownQuest
     ```bash
     uv run zensical serve
    ```
+
+### Building the site
+
+1. Build with uv
+    ```bash
+    uv run zensical build --clean
+    ```
+2. Deploy with the docker compose
+    ```bash
+    docker compose up -d
+    ```

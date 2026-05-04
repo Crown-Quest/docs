@@ -26,3 +26,4 @@ Documentation repository for the T-ESP project CrownQuest
     ```bash
     docker compose up -d
     ```
+badaboy

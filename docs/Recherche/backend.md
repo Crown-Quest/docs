@@ -1,4 +1,4 @@
-# Crown & Quest — Backend Architecture Research
+# Crown & Quest — Recherche sur l'architecture backend
 
 ## 1. Introduction
 

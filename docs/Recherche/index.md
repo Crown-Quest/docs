@@ -1,1 +1,1 @@
-# Researches for the Crown Quest Project
+# Recherches pour le projet Crown & Quest

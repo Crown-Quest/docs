@@ -44,10 +44,25 @@ Copyright &copy; 2026 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+ nav = [
+   { "Introduction" = "index.md" },
+   { "Management de Projet" = [
+       "project_management/convention.md",
+       "project_management/team_management.md"
+       ]
+   },
+   { "Ressources Humaines" = "human_ressources/index.md"},
+   { "WBS" = "WBS/wbs.md"},
+   { "Recherche" = [
+       "Recherche/index.md",
+       "Recherche/backend.md",
+       "Recherche/IoT_api.md",
+       "Recherche/IoT_hardware.md",
+       "Recherche/technos.md",
+       "Recherche/recherches_hand_tracking+deplacement.md"
+       ]
+   }
+ ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of

@@ -48,7 +48,8 @@ Copyright &copy; 2026 The authors
    { "Introduction" = "index.md" },
    { "Management de Projet" = [
        "project_management/convention.md",
-       "project_management/team_management.md"
+       "project_management/team_management.md",
+       "project_management/RGPD.md"
        ]
    },
    { "Ressources Humaines" = "human_ressources/index.md"},

@@ -1,5 +1,26 @@
-# T-ESP-700-CrownQuest
-Documentation repository for the T-ESP project CrownQuest
+# Crown & Quest — Documentation
+
+**Crown & Quest** est un projet académique EPITECH (T-ESP-700) visant à créer une simulation médiévale immersive combinant :
+
+- **Réalité Virtuelle (VR)** — Unity 6 LTS + Meta Quest 3, hand tracking via OpenXR
+- **Intelligence Artificielle** — PNJ adaptatifs, arbres de dialogue
+- **IoT haptique** — Gilet DIY (ESP32 + moteurs vibrants), communication BLE avec Unity
+
+L'objectif est d'offrir une expérience où le joueur **incarne réellement son avatar** dans un univers médiéval vivant, avec des retours physiques synchronisés aux événements du jeu.
+
+> Équipe fondatrice : Maïva Magnifouet · Quentin Faivret · Geoffrey Mairesse
+
+---
+
+## Accès à la documentation
+
+### Site en ligne (GitHub Pages)
+
+La documentation est déployée automatiquement sur GitHub Pages à chaque push sur `main` :
+
+```
+https://crown-quest.github.io/docs/
+```
 
 ### Running the docs site in dev mode
 
@@ -26,3 +47,21 @@ Documentation repository for the T-ESP project CrownQuest
     ```bash
     docker compose up -d
     ```
+
+---
+
+## Structure du projet
+
+```
+docs/
+├── project_management/   # Conventions, gestion d'équipe, RGPD
+├── Recherche/            # Études techniques (VR, IoT, backend, IA)
+├── 02-architecture/      # Gantt, roadmap
+├── WBS/                  # Work Breakdown Structure
+└── human_ressources/     # Recrutement et annonces
+meetings/                 # Comptes-rendus de réunions (PDF)
+```
+
+## Contribuer
+
+Voir [CONTRIBUTING.md](./CONTRIBUTING.md) pour les conventions de commits, branches et pull requests.

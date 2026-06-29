@@ -8,8 +8,6 @@
 
 L'objectif est d'offrir une expérience où le joueur **incarne réellement son avatar** dans un univers médiéval vivant, avec des retours physiques synchronisés aux événements du jeu.
 
-> Équipe fondatrice : Maïva Magnifouet · Quentin Faivret · Geoffrey Mairesse
-
 ---
 
 ## Accès à la documentation

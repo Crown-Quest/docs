@@ -53,13 +53,22 @@ https://crown-quest.github.io/docs/
 ## Structure du projet
 
 ```
-docs/
-├── project_management/   # Conventions, gestion d'équipe, RGPD
-├── Recherche/            # Études techniques (VR, IoT, backend, IA)
-├── 02-architecture/      # Gantt, roadmap
-├── WBS/                  # Work Breakdown Structure
-└── human_ressources/     # Recrutement et annonces
-meetings/                 # Comptes-rendus de réunions (PDF)
+.
+├── conf/                        # Configuration du serveur web (Caddyfile)
+├── docs/                        # Sources de la documentation
+│   ├── Architecture/            # Gantt, roadmap projet
+│   ├── Contribution/            # Guide de contribution
+│   ├── Human_ressources/        # Annonces de recrutement
+│   ├── Project_management/      # Conventions, gestion d'équipe, RGPD
+│   ├── Recherche/               # Études techniques (VR, IoT, backend, IA)
+│   ├── WBS/                     # Work Breakdown Structure
+│   └── css/                     # Styles personnalisés du site de docs
+├── meetings/                    # Comptes-rendus de réunions (PDF)
+├── site/                        # Site généré par Zensical (build output)
+├── docker-compose.yaml          # Déploiement Caddy
+├── pyproject.toml               # Configuration Python / uv
+├── zensical.toml                # Configuration du site de documentation
+└── mise.toml                    # Gestionnaire de versions d'outils
 ```
 
 ## Contribuer

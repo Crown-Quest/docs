@@ -10,10 +10,10 @@ Architecture globale :p1b, 2026-01-20, 30d
 Choix technologiques :p1c, 2026-02-15, 30d
 
 section Phase 2 - Recherche IoT & VR
-Recherche Unity / VR :p2a, 2026-01-15, 120d
-Recherche IoT gilet haptique :p2b, 2026-01-15, 120d
-Recherche IA :p2c, 2026-02-15, 90d
-Recherche architecture Backend :p2d, 2026-02-15, 90d
+Recherche Unity / VR :p2a, 2026-02-15, 120d
+Recherche IoT gilet haptique :p2b, 2026-02-15, 120d
+Recherche IA :p2c, 2026-02-15, 120d
+Recherche architecture Backend :p2d, 2026-02-15, 120d
 
 section Phase 3 - Premières Fonctionnalités
 Premiers assets Unity :p3a, 2026-08-15, 90d
